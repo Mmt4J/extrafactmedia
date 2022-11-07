@@ -396,6 +396,14 @@ header .navmenu .navitem:hover .dropdown{
 
 }
 
+/* Featured post section*/
+.featured-post-form{
+	padding: 32px 0;
+}
+
+.featured-post-form .input-control-sm{
+	width: 400px;
+}
 
 /*Responsive Boxes/Container*/
 .admin-container{

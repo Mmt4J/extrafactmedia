@@ -38,6 +38,7 @@
 	</header>
 
 	 <div class="page-wrapper">
+        <!--The side bar-->
         <div class="sidebar">
         	<div class="sidebar-author-mobile">
                 <img class="avatar" src="../../assets/images/mmt.jpg" alt="">
@@ -102,13 +103,24 @@
                 <div class="lg-box">
                     <h1 class="center">Manage Posts</h1>
                     <hr>
+
+                    <!--The messages-->
                     <div class="message success">
                         <ion-icon name="checkmark-circle" class="message-icon"></ion-icon>
                         <span>This is a sample messsage.</span>
                     </div>
 
+                    <!--The search form-->
                      <form action="post" class="featured-post-form">
-
+                        <strong>Featured Post:</strong>
+                        <span class="title-wrapper">
+                            <span>This is a sample post title</span>
+                            <button type="button" class="change-featured-post">Change</button>
+                        </span>
+                        <span class="input-wrapper hide">
+                            <input type="text" name="title" class="input-control input-control-sm" placeholder="Enter post title...">
+                            <button type="submit" class="btn btn-primary">Update</button>
+                        </span>
                     </form>
                 </div>
             </div>
@@ -118,6 +130,16 @@
 <script src="../../assets/js/admin.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    const changeFeaturedPostBtn = document.querySelector('.change-featured-post');
+    const inputWrapper = document.querySelector('.input-wrapper');
+    const titleWrapper = document.querySelector('.title-wrapper');
+
+    changeFeaturedPostBtn.addEventListener('click', function() {
+        inputWrapper.classList.toggle('hide');
+        titleWrapper.classList.toggle('hide');
+    })
+</script>
 
 </body>
 </html>
