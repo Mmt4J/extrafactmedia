@@ -178,7 +178,15 @@ header .navmenu .navitem .dropdown a{
 }
 
 .logo-wrapper span{
-	background-color: #47AB31;
+	background-color: black;
+	padding: 0 7px;
+	line-height: 0;
+	border-radius: 2px;
+	color: #fff;
+}
+
+.logo-wrapper span.span{
+	background-color: #47AB31 ;
 	padding: 0 7px;
 	line-height: 0;
 	border-radius: 2px;
