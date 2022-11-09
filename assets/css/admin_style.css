@@ -294,6 +294,22 @@ header .navmenu .navitem:hover .dropdown{
 
 }
 
+/* TABLES */
+.admin-table .table-actions{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.admin-table .table-actions .table-filter-group{
+	flex-basis: 50%;
+}
+
+.admin-table .table-actions .table-buttons{
+	flex-basis: 50%;
+	text-align: right;
+}
 
 /*============Admin Layout===============*/
 .page-wrapper{

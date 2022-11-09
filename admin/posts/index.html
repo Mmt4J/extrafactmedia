@@ -41,7 +41,7 @@
         <!--The side bar-->
         <div class="sidebar">
         	<div class="sidebar-author-mobile">
-                <img class="avatar" src="../../assets/images/mmt.jpg" alt="">
+                <img class="avatar" src="https://res.cloudinary.com/kapposoft-technologies/image/upload/v1655823315/_20200125_214247_o7scwj.jpg" alt="">
                 <h3 class="author-name">Matthew A</h3>
                 <a href="/logout" class="logout-link">Logout</a>
             </div>
@@ -100,7 +100,7 @@
 
         <div class="page-content">
              <div class="admin-container">
-                <div class="lg-box">
+                <div class="admin-table lg-box">
                     <h1 class="center">Manage Posts</h1>
                     <hr>
 
@@ -122,6 +122,32 @@
                             <button type="submit" class="btn btn-primary">Update</button>
                         </span>
                     </form>
+                    <!--Filter tables-->
+                    <div class="table-actions">
+                        <div class="table-filter-group">
+                            <input type="text" name="search-term" id="search-post-input" placeholder="search...">
+                            <select name="filter-posts" id="filter-posts">
+                                <option value="All">--Filter--</option>
+                                <option value="OLDEST">Oldest</option>
+                                <option value="NEWEST">Newest</option>
+                                <option value="POPULAR">Popular</option>
+                                <option value="PUBLISHED">Published</option>
+                                <option value="DRAFTS">Drafts</option>
+                            </select>
+                        </div>
+
+                        <div class="table-buttons">
+                            <a href="#" class="btn warning-btn small-btn">
+                                <ion-icon name="trash-outline" class="icon"></ion-icon>
+                                Trash
+                            </a>
+                            <a href="#" class="btn warning-btn small-btn">
+                                <ion-icon name="add-circle-outline" class="icon"></ion-icon>
+                                Add Post
+                            </a>
+                            <a href="" class="btn warning-btn small-btn"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
