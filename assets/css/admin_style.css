@@ -10,7 +10,7 @@ body{
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #dfe2ef;
+	background-color: #f4f5fa;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif';
 	-webkit-font-smoothing: antialiased; /* For clean font rendition especially on apple device*/
 }
@@ -35,6 +35,16 @@ body{
 hr{
 	border: 1px solid #e2e9f3;
 }
+
+.inline-divider{
+	color: #929aa5;
+	margin: 0 4px;
+}
+
+.responsive-table{
+	overflow-x: auto;
+}
+
 /*======================Component=====================*/
 /* Mesages*/
 .message{
@@ -209,92 +219,109 @@ header .navmenu .navitem .dropdown a{
 
 @media only screen and (max-width: 756px) {
 	
-header .menu-icon{
-	display:block;
+	header .menu-icon{
+		display:block;
+	}
+
+	header .nav-overlay.open{
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.45);
+	}
+
+	header .logo-wrapper{
+		width: 100%;
+		text-align: center;
+	}
+
+	header nav{
+		flex-grow: 1;
+	}
+
+	header .search-item, header .search-item input{
+		width:100%;
+	}
+
+	header .navmenu{
+		position: fixed;
+		left: 0;
+		top: 0;
+		flex-direction: column;
+		height: 100%;
+		width: 250px;
+		background-color: #fff;
+		overflow-y: scroll;
+		z-index: 99999;
+		padding: 50px 0px;
+		transform: translateX(-250px) ;
+		transition: all 0.25s ease-in-out;
+	}
+
+	header .navmenu.open{
+		transform: translateX(0px);
+		transition: all 0.25s ease-in-out;
+	}
+
+	header .navmenu .navitem a{
+		padding: 14px;
+	}
+
+	header .navmenu .navitem{
+		flex-direction: column;
+	}
+
+	header .navmenu .navitem .dropdown{
+		width: 100%;
+		position: static;
+		box-shadow: none;
+		opacity: 1;
+		max-height: 0px;
+		overflow: hidden; 
+		z-index: 1;
+		transform: translateY(0px);
+		transition: max-height 0.25s ease-in-out; 
+	}
+
+	header .navmenu .navitem.active .dropdown{
+		max-height: 300px;
+		transition: max-height 0.25s ease-in-out; 
+	}
+
+	header .navmenu .navitem .dropdown a{
+		padding-left: 30px;
+	}
+
+	header .navmenu .navitem:hover .dropdown{
+		opacity: 1;
+		z-index: 5;
+		transform: translate(0);
+		transition: all 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+	}
+
 }
 
-header .nav-overlay.open{
-	display: block;
-	position: fixed;
-	top: 0;
-	left: 0;
+/* Featured post section*/
+.featured-post-form{
+	padding: 32px 0;
+}
+
+.featured-post-form .input-control-sm{
+	max-width: 400px;
 	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.45);
 }
 
-header .logo-wrapper{
-	width: 100%;
-	text-align: center;
+@media only screen and (max-width: 756px) {
+	.featured-post-form .input-control-sm{
+		margin: 7px 0;
+	}
 }
 
-header nav{
-	flex-grow: 1;
-}
 
-header .search-item, header .search-item input{
-	width:100%;
-}
-
-header .navmenu{
-	position: fixed;
-	left: 0;
-	top: 0;
-	flex-direction: column;
-	height: 100%;
-	width: 250px;
-	background-color: #fff;
-	overflow-y: scroll;
-	z-index: 99999;
-	padding: 50px 0px;
-	transform: translateX(-250px) ;
-	transition: all 0.25s ease-in-out;
-}
-
-header .navmenu.open{
-	transform: translateX(0px);
-	transition: all 0.25s ease-in-out;
-}
-
-header .navmenu .navitem a{
-	padding: 14px;
-}
-
-header .navmenu .navitem{
-	flex-direction: column;
-}
-
-header .navmenu .navitem .dropdown{
-	width: 100%;
-	position: static;
-	box-shadow: none;
-	opacity: 1;
-	max-height: 0px;
-	overflow: hidden; 
-	z-index: 1;
-  	transform: translateY(0px);
-  	transition: max-height 0.25s ease-in-out; 
-}
-
-header .navmenu .navitem.active .dropdown{
-	max-height: 300px;
-	transition: max-height 0.25s ease-in-out; 
-}
-
-header .navmenu .navitem .dropdown a{
-	padding-left: 30px;
-}
-
-header .navmenu .navitem:hover .dropdown{
-	opacity: 1;
-	z-index: 5;
-	transform: translate(0);
-	transition: all 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-}
-
-}
-
-/* TABLES */
+/* Table actions*/
 .admin-table .table-actions{
 	display: flex;
 	justify-content: space-between;
@@ -310,6 +337,85 @@ header .navmenu .navitem:hover .dropdown{
 	flex-basis: 50%;
 	text-align: right;
 }
+
+@media only screen and (max-width: 756px) {
+	.admin-table .table-actions .table-filter-group input,
+	.admin-table .table-actions .table-filter-group select{
+		min-width: 150%;
+		margin: 7px 0;
+	}
+	.admin-table .table-actions .table-buttons{
+		display: flex;
+		flex-direction: column;
+	}
+	.admin-table .table-actions .table-buttons .btn{
+		margin: 7px 0;
+	}
+}
+
+/* Tables*/
+.admin-table table{
+	width: 100%;
+	background-color: #fff;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #e2e9f3;
+	margin-top: 16px;
+}
+
+.admin-table table tr{
+	border-top: 1px solid #e2e9f3;
+}
+
+.admin-table table th, .admin-table table td{
+	padding: 12px;
+	text-align: left;
+}
+
+.admin-table table td a{
+	text-decoration: none;
+	color: #0a3654;
+}
+
+.admin-table table td a:hover{
+	text-decoration:underline;	
+}
+
+.admin-table .td-action-links{
+	margin-top: 10px;
+}
+
+.admin-table .td-action-links a{
+	font-size: 0.89rem;
+}
+
+.admin-table .td-action-links a.trash{
+	color: #ff5e00;
+}
+
+.admin-table .td-action-links a.edit{
+	color: #00a2ff;
+}
+
+/*Table pagination*/
+.admin-table .pagination-links{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.admin-table .pagination-links .link{
+	font-size: 0.9rem;
+	background-color: transparent;
+	padding: 0.35rem 0.75rem;
+	min-width: 35px;
+	border: 1px solid #e2e9f3;
+}
+
+.admin-table .pagination-links .link.active{
+	background-color: #8bb7e9;
+	color: #fff;
+} 
+
 
 /*============Admin Layout===============*/
 .page-wrapper{
@@ -412,14 +518,6 @@ header .navmenu .navitem:hover .dropdown{
 
 }
 
-/* Featured post section*/
-.featured-post-form{
-	padding: 32px 0;
-}
-
-.featured-post-form .input-control-sm{
-	width: 400px;
-}
 
 /*Responsive Boxes/Container*/
 .admin-container{
