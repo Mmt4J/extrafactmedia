@@ -45,7 +45,34 @@ hr{
 	overflow-x: auto;
 }
 
-/*======================Component=====================*/
+.input-control{
+	display: block;
+	width: 100%;
+	font-size: 1.1rem;
+	color: #55595c;
+	background-color: #fff;
+	border: 1px solid #00000026;
+	line-height: 1.6rem;
+	padding: 0.75rem 1rem;
+	border-radius: 3px;
+	height: 52px;
+	font-family: inherit;
+}
+
+textarea.input-control{
+	height: unset;
+}
+
+.input-control-sm{
+	display: inline-block;
+	height: 42px !important;
+}
+
+.input-control:focus{
+	outline: 0;
+	border: 1px solid #47ab3198;
+}
+/*===========Component============*/
 /* Mesages*/
 .message{
 	margin: 10px 0;
@@ -79,6 +106,12 @@ hr{
 	margin-right:10px;
 }
 
+.form-errors{
+	background-color: #fddfde;
+	color: #944949;
+	padding: 16px 32px;
+	border-radius: 3px;
+}
 
 /* Styles for the header*/
 header{
@@ -320,7 +353,6 @@ header .navmenu .navitem .dropdown a{
 	}
 }
 
-
 /* Table actions*/
 .admin-table .table-actions{
 	display: flex;
@@ -416,6 +448,21 @@ header .navmenu .navitem .dropdown a{
 	color: #fff;
 } 
 
+/* Admin Forms */
+.admin-form{
+	margin: 30px auto;
+	background-color: #fff;
+	border: 5px;
+}
+
+.input-group{
+	margin-bottom: 16px;
+}
+
+.input-group label{
+	display: block;
+	margin-bottom: 8px;
+}
 
 /*============Admin Layout===============*/
 .page-wrapper{
@@ -526,24 +573,25 @@ header .navmenu .navitem .dropdown a{
 }
 
 .sm-box{
-	padding: 32px 10px;
+	padding: 32px 20px;
 	width: 100%;
 	max-width: 500px;
 }
 
 .md-box{
-	padding: 32px 10px;
+	padding: 32px 20px;
 	width: 75%;
 }
 
 .lg-box{
-	padding: 32px 10px;
+	padding: 32px 20px;
 	width: 95%;
 }
 
 @media only screen and (max-width: 1024px) {
 	.md-box, .lg-box{
-		width: 100%;
+		width: 96%;
+		padding: 32px 10px;
 	}
 }
 /*======================Pages=====================*/
