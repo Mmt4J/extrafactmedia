@@ -227,7 +227,7 @@ header .navmenu .navitem .dropdown a{
 	color: #fff;
 }
 
-.logo-wrapper .image-logo{
+.logo-wrapper img{
 	width: auto;
 	height: 120px;
 }
@@ -265,6 +265,11 @@ header .navmenu .navitem .dropdown a{
 	header .logo-wrapper{
 		width: 100%;
 		text-align: center;
+	}
+
+	.logo-wrapper img{
+		width: auto;
+		height: 120px;
 	}
 
 	header nav{
