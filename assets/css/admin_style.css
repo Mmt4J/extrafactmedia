@@ -215,7 +215,6 @@ header .navmenu .navitem .dropdown a{
 	padding: 15px;
 }
 
-
 .logo-wrapper{
 	font-size: 1.4rem;
 }
@@ -228,12 +227,9 @@ header .navmenu .navitem .dropdown a{
 	color: #fff;
 }
 
-.logo-wrapper span.span{
-	background-color: #47AB31 ;
-	padding: 0 7px;
-	line-height: 0;
-	border-radius: 2px;
-	color: #fff;
+.logo-wrapper .image-logo{
+	width: auto;
+	height: 120px;
 }
 
 /* Media query for the header*/
