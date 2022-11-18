@@ -33,7 +33,7 @@ body{
 }
 
 hr{
-	border: 1px solid #e2e9f3;
+	border: 1px solid #d0dae7;
 }
 
 .inline-divider{
@@ -456,6 +456,10 @@ header .navmenu .navitem .dropdown a{
 }
 
 /* Tables*/
+.admin-table{
+	margin: 0 auto;
+}
+
 .admin-table table{
 	width: 100%;
 	background-color: #fff;
