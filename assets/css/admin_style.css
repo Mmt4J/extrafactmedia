@@ -590,6 +590,37 @@ padding: 25px 0 0 20px;
 	margin-bottom: 8px;
 }
 
+.admin-form .avatar-input-group .change-avatar-btn{
+	height: 150px;
+	width: 150px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	margin-bottom: 8px;
+	outline: none;
+	background-image: url(https://res.cloudinary.com/kapposoft-technologies/image/upload/v1669359192/kapposoft%20tech/Extra%20Fact%20Media/avatar_zui4d6.jpg);
+	background-size: cover;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.admin-form .avatar-input-group .change-avatar-btn span{
+	opacity: 0;
+}
+
+.admin-form .avatar-input-group .change-avatar-btn:hover span{
+	opacity: 1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 8px;
+	color: #fff;
+	font-size: 1rem;
+	background-color: #0000005b;
+	transition: opacity 0.125s ease-in-out;
+}
+
 /*============Admin Layout===============*/
 .page-wrapper{
 	display: flex;

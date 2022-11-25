@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Include stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/admin_style.css">
+	<title>Admin - Create User</title>
+</head>
+<body>
+	<header>
+		<div class="nav-overlay"></div>
+
+		<span role="button" class="menu-icon">
+			<ion-icon name="menu-outline"></ion-icon>
+		</span>
+
+		<a href="" class="logo-wrapper td-none">
+			<div>
+                <img src="../../assets/images/efm.png" alt="Logo" class="image-logo">
+			</div>
+		</a>
+
+		<nav>
+			<ul class="navmenu">
+				 <li class="navitem">
+					<a href="#">
+						<ion-icon name="person-circle-outline" class="navicon"></ion-icon>
+						Adebayo
+						<ion-icon name="chevron-down-outline" class="navicon"></ion-icon>
+					</a>
+					<ul class="dropdown">
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</li> 
+
+			</ul>
+		</nav>
+	</header>
+
+	 <div class="page-wrapper">
+        <!--The side bar-->
+        <div class="sidebar">
+        	<div class="sidebar-author-mobile">
+                <img class="avatar" src="https://res.cloudinary.com/kapposoft-technologies/image/upload/v1655823315/_20200125_214247_o7scwj.jpg" alt="">
+                <h3 class="author-name">Matthew A</h3>
+                <a href="/logout" class="logout-link">Logout</a>
+            </div>
+            <ul class="list-menu">
+                <li>
+                    <a href="../dashboard.html">
+                        <ion-icon name="speedometer-outline" class="menu-icon"></ion-icon>
+                        Dashboard 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="../posts/index.html">
+                        <ion-icon name="reader-outline" class="menu-icon"></ion-icon>
+                        Post 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <ion-icon name="grid-outline" class="menu-icon"></ion-icon>
+                        Topics 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="../users/index.html">
+                        <ion-icon name="people-outline" class="menu-icon"></ion-icon>
+                        Users 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="../roles/index.html">
+                        <ion-icon name="lock-closed-outline" class="menu-icon"></ion-icon>
+                        Roles 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="../permissions/index.html">
+                        <ion-icon name="key-outline" class="menu-icon"></ion-icon>
+                        Permisions 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="../collections/index.html">
+                        <ion-icon name="reader-outline" class="menu-icon"></ion-icon>
+                        Collections 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Page Cotent-->
+        <div class="page-content">
+             <div class="admin-container">
+                
+                <form action="#" method="post" class="admin-form sm-box">
+                    <h1 class="center form-title">Create User</h1>
+
+                    <div class="input-group avatar-input-group center">
+                        <input type="file" name="avatar" id="avatar-input" class="hide avatar-input">
+                        <button type="button" class="change-avatar-btn">
+                            <span>Change</span>
+                        </button>
+                        <label for="">Profeli Image (Optional)</label>
+                    </div>
+        
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" class="input-control">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="mail" name="mail" id="mail" class="input-control">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="input-control">
+                    </div>
+                    <div class="input-group">
+                        <label for="passwod_conf">Confirm Password</label>
+                        <input type="password" name="passwod_conf" id="passwod_conf" class="input-control">
+                    </div>
+                    <div class="input-group">
+                        <label for="role">Role</label>
+                        <select name="role" id="role" class="input-control">
+                            <option value=""></option>
+                            <option value="author">Author</option>
+                            <option value="author">Admin</option>
+                            <option value="author">Editor</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="bio">Bio</label>
+                        <textarea name="bio" id="bio" class="input-control"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="twitter">Twitter (Optional)</label>
+                        <input type="text" name="twitter" id="twitter" class="input-control">
+                    </div>
+                    <div class="input-group">
+                        <label for="linkdin">Linkdin (Optional)</label>
+                        <input type="text" name="linkdinr" id="linkdin" class="input-control">
+                    </div>
+                    <div class="input-group">
+                        <label for="instagram">Instagram (Optional)</label>
+                        <input type="text" name="instagram" id="instagram" class="input-control">
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="btn primary-btn big-btn">Save</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <!--//Page Cotent Ends-->
+    </div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="../../assets/js/admin.js"></script>
+
+
+</body>
+</html>
