@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../../assets/css/admin_style.css">
-	<title>Admin - Manage Roles</title>
+	<title>Admin - Manage Post Collections</title>
 </head>
 <body>
 	<header>
@@ -75,21 +75,21 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../roles/index.html">
+                    <a href="#">
                         <ion-icon name="lock-closed-outline" class="menu-icon"></ion-icon>
                         Roles 
                         <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../permissions/index.html">
                         <ion-icon name="key-outline" class="menu-icon"></ion-icon>
-                        Permissions 
+                        Permisions 
                         <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
                     </a>
                 </li>
                 <li>
-                    <a href="../collections/index.html">
+                    <a href="#">
                         <ion-icon name="reader-outline" class="menu-icon"></ion-icon>
                         Collections 
                         <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
@@ -101,7 +101,7 @@
         <div class="page-content">
              <div class="admin-container">
                 <div class="admin-table sm-box">
-                    <h1 class="center">Manage Permission</h1>
+                    <h1 class="center">Manage Post Collection</h1>
                     <hr>
                    
                     <!--Filter tables-->
@@ -109,49 +109,60 @@
                         <span></span>
                         <a href="create.html" class="btn primary-btn small-btn">
                             <ion-icon name="add-circle-outline" class="icon"></ion-icon>
-                            Add Permission
+                            Add Collection
                         </a>                
                     </div>
                     <!--Responsive table-->
                     <div class="responsive-table">
+                        <p>Tips: Drage and drop items (Only the first four will feature on home page)</p>
                         <table>
                             <thead>
                                 <th>SN</th>
-                                <th>Permission</th>
+                                <th>Collection Title</th>
+                                <th>No. of Post</th>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
                                     <td>
-                                        Create Post
+                                        Best of 2022
                                         <div class="td-action-links">
-                                            <a href="#" class="trash">Trash</a>
+                                            <a href="#" class="trash">Delete</a>
                                             <span class="inline-divider">|</span>
                                             <a href="#" class="edit">Edit</a>
+                                            <span class="inline-divider">|</span>
+                                            <a href="#" class="edit">Posts</a>
                                         </div>
                                     </td>
+                                    <td>2</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>
-                                       Publish Post
+                                        Sport
                                         <div class="td-action-links">
-                                            <a href="#" class="trash">Trash</a>
+                                            <a href="#" class="trash">Delete</a>
                                             <span class="inline-divider">|</span>
                                             <a href="#" class="edit">Edit</a>
+                                            <span class="inline-divider">|</span>
+                                            <a href="#" class="edit">Posts</a>
                                         </div>
                                     </td>
+                                    <td>6</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>
-                                        Delete Post
+                                        Health
                                         <div class="td-action-links">
-                                            <a href="#" class="trash">Trash</a>
+                                            <a href="#" class="trash">Delete</a>
                                             <span class="inline-divider">|</span>
                                             <a href="#" class="edit">Edit</a>
+                                            <span class="inline-divider">|</span>
+                                            <a href="#" class="edit">Posts</a>
                                         </div>
                                     </td>
+                                    <td>10</td>
                                 </tr>
                             </tbody>
                         </table>
