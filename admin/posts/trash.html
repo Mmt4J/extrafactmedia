@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/admin_style.css">
+	<title>Admin - Post Trash</title>
+</head>
+<body>
+	<header>
+		<div class="nav-overlay"></div>
+
+		<span role="button" class="menu-icon">
+			<ion-icon name="menu-outline"></ion-icon>
+		</span>
+
+		<a href="" class="logo-wrapper td-none">
+			<div>
+				<img src="https://res.cloudinary.com/kapposoft-technologies/image/upload/v1669360184/kapposoft%20tech/Extra%20Fact%20Media/efm_cvd1lx.png" alt="Logo" class="image-logo">
+			</div>
+		</a>
+
+		<nav>
+			<ul class="navmenu">
+				 <li class="navitem">
+					<a href="#">
+						<ion-icon name="person-circle-outline" class="navicon"></ion-icon>
+						Adebayo
+						<ion-icon name="chevron-down-outline" class="navicon"></ion-icon>
+					</a>
+					<ul class="dropdown">
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</li> 
+
+			</ul>
+		</nav>
+	</header>
+
+	 <div class="page-wrapper">
+        <!--The side bar-->
+        <div class="sidebar">
+        	<div class="sidebar-author-mobile">
+                <img class="avatar" src="https://res.cloudinary.com/kapposoft-technologies/image/upload/v1655823315/_20200125_214247_o7scwj.jpg" alt="">
+                <h3 class="author-name">Matthew A</h3>
+                <a href="/logout" class="logout-link">Logout</a>
+            </div>
+            <ul class="list-menu">
+                <li>
+                    <a href="../dashboard.html">
+                        <ion-icon name="speedometer-outline" class="menu-icon"></ion-icon>
+                        Dashboard 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="reader-outline" class="menu-icon"></ion-icon>
+                        Post 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="../topics/index.html">
+                        <ion-icon name="grid-outline" class="menu-icon"></ion-icon>
+                        Topics 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="../users/index.html">
+                        <ion-icon name="people-outline" class="menu-icon"></ion-icon>
+                        Users 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="../roles/index.html">
+                        <ion-icon name="lock-closed-outline" class="menu-icon"></ion-icon>
+                        Roles 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="../permissions/index.html">
+                        <ion-icon name="key-outline" class="menu-icon"></ion-icon>
+                        Permisions 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="../collections/index.html">
+                        <ion-icon name="reader-outline" class="menu-icon"></ion-icon>
+                        Collections 
+                        <!--<ion-icon name="chevron-forward-outline" class="chevron-forward"></ion-icon>-->
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="page-content">
+             <div class="admin-container">
+                <div class="admin-table lg-box">
+                    <h1 class="center">Post Trash</h1>
+                    <hr>
+
+                    <!--Filter tables-->
+                    <div class="table-actions">
+                        <span></span>
+                        <a href="index.html" class="btn primary-btn small-btn">
+                            <ion-icon name="settings-outline" class="icon"></ion-icon>
+                            Manage Posts
+                        </a>
+                    </div>
+                    <!--Responsive table-->
+                    <div class="responsive-table">
+                        <table>
+                            <thead>
+                                <th>SN</th>
+                                <th>Authur</th>
+                                <th>Title</th>
+                                <th>Topic</th>
+                                <th>Views</th>
+                                <th>Published</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>MAtthew A</td>
+                                    <td>
+                                        <a href="" target="_blank">
+                                            The media first post
+                                        </a>
+                                        <div class="td-action-links">
+                                            <a href="#" class="edit">Restore</a>
+                                            <span class="inline-divider">|</span>
+                                            <a href="#" class="trash">Delete</a>  
+                                        </div>
+                                    </td>
+                                    <td>Self help</td>
+                                    <td>2000</td>
+                                    <td><a href="#">Published</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>MAtthew A</td>
+                                    <td>
+                                        <a href="" target="_blank">
+                                            The media first post
+                                        </a>
+                                        <div class="td-action-links">
+                                            <a href="#" class="edit">Restore</a>
+                                            <span class="inline-divider">|</span>
+                                            <a href="#" class="trash">Delete</a>  
+                                        </div>
+                                    </td>
+                                    <td>Self help</td>
+                                    <td>2000</td>
+                                    <td><a href="#">Published</a></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <td colspan="6">
+                                    <div class="pagination-links">
+                                        <a href="#" class="link active">1</a>
+                                        <a href="#" class="link">2</a>
+                                        <a href="#" class="link">3</a>
+                                        <a href="#" class="link">4</a>
+                                        <a href="#" class="link">5</a>
+                                        <a href="#" class="link">6</a>
+                                    </div>
+                                </td>
+                            </tfoot>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="../../assets/js/admin.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    const changeFeaturedPostBtn = document.querySelector('.change-featured-post');
+    const inputWrapper = document.querySelector('.input-wrapper');
+    const titleWrapper = document.querySelector('.title-wrapper');
+
+    changeFeaturedPostBtn.addEventListener('click', function() {
+        inputWrapper.classList.toggle('hide');
+        titleWrapper.classList.toggle('hide');
+    })
+</script>
+
+</body>
+</html>
