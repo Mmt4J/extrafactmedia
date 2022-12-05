@@ -797,3 +797,14 @@ padding: 25px 0 0 20px;
 	}
 }
 /*======================Pages=====================*/
+/* Assign Permission Page*/
+.selected-role{
+	margin-top: 5px;
+	background-color: #fff;
+	border-radius: 5px;
+	padding:20px;
+}
+.selected-role .description{
+	font-size: 1.1rem;
+	line-height: 1.4rem;
+}
