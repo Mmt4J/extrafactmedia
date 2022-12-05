@@ -141,6 +141,19 @@ textarea.input-control{
 	transform: translateY(3px);
 }
 
+.sm-column{
+	width: 40px;
+}
+
+.link{
+	color: #00a2ff;
+	text-decoration: none;
+}
+
+.link:hover{
+	text-decoration: underline;
+}
+
 /*===========Component============*/
 /* Mesages*/
 .message{
@@ -522,6 +535,38 @@ header .navmenu .navitem .dropdown a{
 	color: #fff;
 } 
 
+/* Twin tables */
+.twin-tables{
+	display: flex; justify-content:space-between
+}
+
+.twin-tables table{
+	margin-top: 0;
+}
+
+.twin-tables table tbody tr:hover{
+	cursor: default;
+	border: 1px solid #bce6d9;
+	background-color: #eef5fc;
+}
+
+.twin-tables table tbody tr .close-icon{
+	color: red;
+	cursor: pointer;
+}
+
+.twin-tables table tbody tr:hover .close-icon{
+	display: block;
+}
+
+.twin-tables table tbody tr .checkmark-icon{
+	color: green;
+}
+
+.twin-tables table tbody tr.selected .checkmark-icon{
+display: block;
+}
+
 /* Admin Forms */
 .admin-form{
 	margin: 30px auto;
@@ -621,7 +666,7 @@ padding: 25px 0 0 20px;
 	transition: opacity 0.125s ease-in-out;
 }
 
-/*============Admin Layout===============*/
+/*========Admin Layout=========*/
 .page-wrapper{
 	display: flex;
 	min-height: calc(100% - 70px);
