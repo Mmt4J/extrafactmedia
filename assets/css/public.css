@@ -1,0 +1,25 @@
+/*=======DEFAULT=======*/
+
+html,
+body {
+    background-color: #fff;
+}
+
+
+/*========COMPONENT=======*/
+
+
+
+/*=========PAGES=========*/
+.page-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    border: 1px solid red;
+    min-height: calc(100vh - 570px);
+}
+
+.page-footer{
+    height: 500px;
+    background-color: #2F323A;
+} 
