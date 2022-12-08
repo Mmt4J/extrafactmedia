@@ -24,14 +24,16 @@ body {
     width: 352px;
     border-radius: 3px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .post-card .image-wrapper{
-    height: 180px;
+    flex-basis: 38%;
 }
 
 .post-card .post-info{
-    height: 300px;
+    flex-basis: 62%;
     padding: 15px;
     border: 1px solid rgba(0, 0, 0, 0.125);
     display: flex;
@@ -74,6 +76,29 @@ body {
 
 .post-card .post-info .author-info .readmore-icon{
     vertical-align: middle;
+}
+
+/*Flat Card*/
+.post-card.flat-card{
+    height: 300px;
+    width: 100%;
+    flex-direction: row;
+}
+
+.post-card.flat-card .image-wrapper,
+.post-card.flat-card .post-info{
+    flex-basis: 50%;
+}
+
+@media only screen and (max-width: 590px){
+    .post-card.flat-card{
+        height: 480px;
+        flex-direction: column;
+    }
+
+    .post-card.flat-card .post-info{
+        padding: 20px;
+    }
 }
 
 /*=========PAGES=========*/
