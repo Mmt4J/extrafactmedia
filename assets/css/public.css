@@ -179,6 +179,39 @@ body {
     }
 }
 
+/* Topics*/
+.topics-container{
+    padding: 60px 0;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(148, 239, 255), rgb(184, 255, 228));
+}
+
+.topics-container .topics-pills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    padding: 0px 32px;
+}
+
+.topics-container .topics-pills a{
+    text-decoration: none;
+    color: unset;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.294);
+    margin: 0px 16px 16px 0px;
+    padding: 10px 32px;
+    border-radius: 4px;
+}
+
+.topics-container .topics-pills a:hover{
+    box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.75);
+    transition: all 0.25s ease-in-out;
+}
+
 .page-footer{
     height: 500px;
     background-color: #2F323A;
