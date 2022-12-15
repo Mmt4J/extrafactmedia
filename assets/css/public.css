@@ -169,6 +169,10 @@ body {
     min-height: calc(100vh - 570px);
 }
 
+.page-section{
+    margin: 0 auto 40px; 
+}
+
 @media only screen and (max-width: 1024px){
     .page-container{
        padding: 16px; 
