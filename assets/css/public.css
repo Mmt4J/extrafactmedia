@@ -212,7 +212,90 @@ body {
     transition: all 0.25s ease-in-out;
 }
 
+/* Page footer*/
 .page-footer{
     height: 500px;
     background-color: #2F323A;
+    display: flex;
+    flex-direction: column;
 } 
+
+.page-footer *{
+    color: #d9dde0;
+}
+
+.page-footer .footer-content{
+    flex-basis: 84%;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px 20px;
+    border-bottom: 1px solid #5f626b;
+    display: flex;
+}
+
+.page-footer .footer-content .content-section{
+    flex-basis: 30%;
+}
+
+.page-footer .section-title{
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+}
+
+.page-footer .company-info .company-bio{
+    line-height: 24px;
+}
+
+.page-footer .company-info .social-links{
+    margin: 32px 0;
+    display: flex;
+    font-size: 24px;
+}
+
+.page-footer .company-info .social-links .social-icon{
+    margin-right: 8px;
+}
+
+.page-footer .company-info .social-links .social-icon:hover{
+    color: #9da19c
+}
+
+.page-footer .helpful-links li{
+    margin-bottom: 8px;
+}
+
+.page-footer .helpful-links{
+    display: flex;
+    justify-content: center;
+}
+
+.page-footer .helpful-links ul{
+    padding-left: 16px;
+}
+
+
+.page-footer .contact-wrapper{
+    flex-basis: 40% !important;
+}
+
+.page-footer .contact-wrapper .input-control.contact{
+    border: 1px solid transparent;
+    background-color: #0b384b;
+    color: #b7b7b8;
+}
+
+.page-footer .contact-wrapper .input-control.contact:focus{
+    background-color: #073438;
+}
+
+.page-footer .copyright-info{
+    flex-basis: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-footer .copyright-info p{
+    color: #72798b;
+}
