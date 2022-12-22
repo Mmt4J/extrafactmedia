@@ -17,6 +17,14 @@ body {
 .post-title a:hover{
     color: #0a678f;
 }
+
+.primary-font{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #37383ec7;
+    font-family: 'Libre Baskerville', serif;
+}
+
 /*========COMPONENT=======*/
 /*Post Card */
 .post-card{
@@ -161,12 +169,24 @@ body {
 }
 
 /*=========PAGES=========*/
-/* Landing/Home Page*/
-.page-container{
+.default-page-container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 32px;
     min-height: calc(100vh - 570px);
+}
+
+.page-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-container .main-content{
+width: 65%;
+}
+
+.page-container .sidebar{
+    width: 30%;
 }
 
 .page-section{
@@ -174,7 +194,7 @@ body {
 }
 
 @media only screen and (max-width: 1024px){
-    .page-container{
+    .default-page-container{
        padding: 16px; 
     }
 }
@@ -312,4 +332,157 @@ body {
     .page-footer .helpful-links{
         justify-content: flex-start;
     }
+}
+
+/* single post style */
+.page-banner{
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    background-color: #f4f4f4;   
+}
+
+.page-banner .banner-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: inherit;
+    display: flex;
+}
+
+.page-banner .banner-container .left-box{
+    flex-basis: 60%;
+    padding: 30px;
+}
+
+.page-banner .banner-container .left-box .banner-title{
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.page-banner .banner-container .left-box .post-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.page-banner .banner-container .left-box .post-details .author-wrapper .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.page-banner .banner-container .left-box .post-details .author-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.page-banner .banner-container .left-box .post-details .author-wrapper .name-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.page-banner .banner-container .left-box .post-details .author-wrapper .name-wrapper a{
+    color: unset;
+}
+
+.page-banner .banner-container .left-box .social-links{
+    display: flex;
+    align-items: center;
+}
+.page-banner .banner-container .left-box .social-links img{
+    width: 30px;
+    height: 30px;
+}
+
+.page-banner .banner-container .right-box{
+    flex-basis: 40%;
+    padding: 30px;
+    margin-left: 8px;
+    text-decoration: none;
+}
+
+.page-banner .banner-container .right-box .featured-image-wrapper{
+    width: 100%;
+    height: 300px;
+}
+
+/* author bio */
+.single-page .author-bio{
+    margin: 5rem auto;
+    display: flex;
+    padding: 20px;
+    border: 1px solid #bbb6b6;
+}
+
+.single-page .author-bio .avatar-wrapper{
+    flex-basis: 10%;
+    padding-top: 20px;
+}
+
+.single-page .author-bio .avatar-wrapper .avatar{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.single-page .author-bio .bio-wrapper{
+    flex-basis: 90%;
+    padding: 0 20px;
+}
+
+.single-page .author-bio .bio-wrapper .author-name{
+    color: #4f5457;
+}
+
+.single-page .author-bio .bio-wrapper .social-links{
+    margin-top: 16px;
+    display: flex;
+}
+
+.single-page .author-bio .bio-wrapper .social-links img{
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+.carousel-container{
+    position: relative;
+}
+
+.carousel-container .slider-arrow{
+        position: absolute;
+        bottom: 0;
+        min-height: 480px;
+        font-size: 2rem;
+        z-index: 2;
+        background-color: transparent;
+        border: none;
+}
+
+/* Suggest Post */
+.single-page .carousel-container .slider-arrow{
+    min-height: 300px;
+}
+
+
+.single-page .carousel-container .next-arrow{
+    right: -40px;
+}
+
+.single-page .carousel-container .pre-arrow{
+    left: -40px;
+}
+
+.single-page .carousel-container .post-card{
+    margin: 0 5px;
+    height: 300px;
+}
+
+.single-page .carousel-container .slick-list{
+    margin: 0 -5px;
+}
+
+.single-page .carousel-container .slider-arrow.slick-disabled{
+    display: none !important;
 }
