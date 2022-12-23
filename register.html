@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/admin_style.css">
+	<link rel="stylesheet" href="assets/css/public.css">
+    <title>Register</title>
+</head>
+<body class="bg-cover">
+    <!--Page container-->
+    <div class="default-page-container">
+        <form action="#" method="post" class="admin-form auth-form">
+            <h1 class="center form-title">Create User</h1>
+
+            <div class="input-group avatar-input-group center">
+                <input type="file" name="avatar" id="avatar-input" class="hide avatar-input">
+                <button type="button" class="change-avatar-btn">
+                    <span>Change</span>
+                </button>
+                <label for="">Profile Image (Optional)</label>
+            </div>
+
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" class="input-control">
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="mail" name="mail" id="mail" class="input-control">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="input-control">
+            </div>
+            <div class="input-group">
+                <label for="passwod_conf">Confirm Password</label>
+                <input type="password" name="passwod_conf" id="passwod_conf" class="input-control">
+            </div>
+
+            <div class="input-group">
+                <button type="submit" class="btn primary-btn long-btn big-btn">Register</button>
+            </div>
+
+            <p class="center">
+                <small>Already have an account? You can <a href="login.html">Log in</a></small>
+            </p>
+
+        </form>
+    </div>
+    <!--End of page container-->
+</body>
+</html>
