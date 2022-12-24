@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6{
 /*========COMPONENT=======*/
 /*Post Card */
 .post-card{
-    height: 480px;
+    height: 450px;
     width: 352px;
     border-radius: 3px;
     overflow: hidden;
@@ -304,7 +304,6 @@ width: 65%;
     width: 100%;
     margin: 0 auto;
     padding: 40px 20px 20px;
-    border-bottom: 1px solid #5f626b;
     display: flex;
 }
 
@@ -363,15 +362,26 @@ width: 65%;
     background-color: #073438;
 }
 
+@media only screen and (max-width: 590px){
+    .page-footer .contact-wrapper .btn.big-btn{
+        min-width: 100%;
+    }
+}
+
 .page-footer .copyright-info{
     flex-basis: 16%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .page-footer .copyright-info p{
     color: #72798b;
+}
+
+.page-footer .copyright-info.about-contact-info{
+    margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 860px){
