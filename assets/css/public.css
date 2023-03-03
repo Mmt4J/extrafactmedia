@@ -636,19 +636,18 @@ width: 65%;
 }
 
 .category-card{
-    height: 350px;
-    width: 252px;
+    height: 450px;
+    width: 352px;
     border-radius: 3px;
     overflow: hidden;
     margin: 10px;
-    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); */
-    transition: 0.3s;
+     /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); */
+     transition: 0.3s;
 }
 
 .category-card:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
-  
 
 .category-card .image-wrapper{
     height: 38%;
@@ -663,9 +662,6 @@ width: 65%;
     justify-content: space-between;
 }
 
-.category-card .post-title{
-    font-size: 1.2rem;
-}
 .category-card .post-info .post-preview{
     color: #171717;
     line-height: 1.5rem;
@@ -679,7 +675,7 @@ width: 65%;
 
 .category-card .post-info .topic-wrapper .topic-tag{
     text-transform:uppercase;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 5px 10px;
     border-radius: 20px;
     color: #205a6d;
@@ -693,40 +689,12 @@ width: 65%;
 }
 
 .category-card .post-info .author-info .author .avatar{
-    height:20px;
-    width: 20px;
+    height:25px;
+    width: 25px;
     border-radius: 50%;
     margin-right: 5px;
 }
 
-.category-card .post-info .author-info a{
-font-size: small;
-}
-
 .category-card .post-info .author-info .readmore-icon{
     vertical-align: middle;
-}
-
-
-@media only screen and (max-width: 590px){
- 
-    .category-section .post{
-        flex-direction: column;
-    }
-
-    .category-card{
-        height: 440px;
-        width: 342px;
-        border-radius: 3px;
-        overflow: hidden;
-        margin: 10px;
-        /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); */
-        transition: 0.3s;
-    }
-
-    .category-card:hover {
-        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-      }
-      
- 
 }
