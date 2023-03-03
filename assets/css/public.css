@@ -699,3 +699,10 @@ width: 65%;
     vertical-align: middle;
 }
 
+@media only screen and (max-width: 590px){
+ 
+    .category-card{
+        margin-top: 5px;
+    }
+    
+}
